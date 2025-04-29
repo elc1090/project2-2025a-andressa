@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriFit - Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-light">
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cardapio.html">Criar Cardápio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="treinos.html">Criar Treinos</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Cadastrar Usuario -->
+  <div class="container">
+    <h1 class="text-center mb-4">Cadastro do Usuário</h1>
+<form id="form-cadastro">
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="col-md-3">
+        <label for="idade" class="form-label">Idade</label>
+        <input type="number" class="form-control" id="idade" name="idade" required>
+      </div>
+      <div class="col-md-3">
+        <label for="peso" class="form-label">Peso (kg)</label>
+        <input type="number" class="form-control" id="peso" name="peso" required>
+      </div>
+    </div>
+  
+    <div class="row g-3 mb-3">
+      <div class="col-md-3">
+        <label for="altura" class="form-label">Altura (cm)</label>
+        <input type="number" class="form-control" id="altura" name="altura" required>
+      </div>
+      <div class="col-md-3">
+        <label for="sexo" class="form-label">Sexo</label>
+        <select class="form-select" id="sexo" name="sexo" required>
+          <option value="">Selecione...</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="atividade" class="form-label">Atividade Física</label>
+        <select class="form-select" id="atividade" name="atividade" required>
+          <option value="">Selecione...</option>
+          <option value="1.2">Sedentário</option>
+          <option value="1.55">Moderadamente ativo</option>
+          <option value="1.9">Ativo</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="objetivo" class="form-label">Objetivo</label>
+        <select class="form-select" id="objetivo" name="objetivo" required>
+          <option value="">Selecione...</option>
+          <option value="Emagrecer">Emagrecimento</option>
+          <option value="Ganhar">Ganho de Massa</option>
+          <option value="Manter peso">Manter Peso</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary btn-lg">Salvar Cadastro</button>
+    </div>
+  </form>
+  </div>
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="module" src="../js/cadastro.js"></script>
+</body>
+</html>
